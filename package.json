@@ -1,0 +1,21 @@
+{
+  "name": "emeraldtests",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test ",
+    "test:headed": "npx playwright test --headed",
+    "test:desktop": "npm run test tests/desktop.spec.ts",
+    "test:desktop:headed": "npm run test tests/desktop.spec.ts -- --headed",
+    "test:login": "npm run test tests/login.spec.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.9.0",
+    "prettier": "3.4.1"
+  }
+}
